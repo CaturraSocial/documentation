@@ -12,9 +12,5 @@ layout:
     visible: false
 ---
 
-# OAuth
-
-{% hint style="danger" %}
-OAuth has nothing as of yet, please come back later.
-{% endhint %}
+# V1
 

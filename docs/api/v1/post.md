@@ -3,18 +3,14 @@ layout:
   title:
     visible: true
   description:
-    visible: false
+    visible: true
   tableOfContents:
     visible: true
   outline:
-    visible: false
+    visible: true
   pagination:
     visible: false
 ---
 
-# OAuth
-
-{% hint style="danger" %}
-OAuth has nothing as of yet, please come back later.
-{% endhint %}
+# Post/Reply
 
