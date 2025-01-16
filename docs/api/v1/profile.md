@@ -25,11 +25,7 @@ Edit a user account
 
 <mark style="color:purple;">`PATCH`</mark> `/profile`
 
-| Name          | Type   | Notes                                                    |
-| ------------- | ------ | -------------------------------------------------------- |
-| username      | String | Can only use `a-z`, `A-Z`, `0-9`, `-`, `_` Max 20 length |
-| display\_name | String | Can use any English character, Max 30 length             |
-| bio           | String | Max 100 Characters                                       |
+<table><thead><tr><th width="165">Name</th><th width="157">Type</th><th>Notes</th></tr></thead><tbody><tr><td>username</td><td>String</td><td>Can only use <code>a-z</code>, <code>A-Z</code>, <code>0-9</code>, <code>-</code>, <code>_</code> Max 20 length</td></tr><tr><td>display_name</td><td>String</td><td>Can use any English character, Max 30 length</td></tr><tr><td>bio</td><td>String</td><td>Max 100 Characters</td></tr></tbody></table>
 
 {% tabs %}
 {% tab title="200" %}
