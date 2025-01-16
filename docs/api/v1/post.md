@@ -1,4 +1,5 @@
 ---
+icon: envelopes-bulk
 layout:
   title:
     visible: true
@@ -12,5 +13,5 @@ layout:
     visible: false
 ---
 
-# Post/Reply
+# Post
 

@@ -1,5 +1,5 @@
 ---
-icon: square-rss
+icon: reply
 layout:
   title:
     visible: true
@@ -13,5 +13,5 @@ layout:
     visible: false
 ---
 
-# Feed
+# Reply
 

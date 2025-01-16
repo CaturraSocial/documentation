@@ -1,4 +1,5 @@
 ---
+icon: square-user
 layout:
   title:
     visible: true
