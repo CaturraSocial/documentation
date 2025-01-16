@@ -55,9 +55,9 @@ Follow/Unfollow a user
 {% tabs %}
 {% tab title="200" %}
 {% code lineNumbers="true" %}
-```
+```json
 {
-    "message": "string"
+    "_message": "string"
 }
 ```
 {% endcode %}
