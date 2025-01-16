@@ -22,7 +22,6 @@ Get the user info of the provided `UUID`
 
 * If left empty it will get the owner of the token info
 * If the token doesn't have the `user.email` scope you will not get the email of that user
-  * Do note that you will get the email of the owner of the token
 
 <mark style="color:blue;">`GET`</mark> `/user/{UUID}`
 
