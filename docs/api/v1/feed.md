@@ -15,3 +15,35 @@ layout:
 
 # Feed
 
+### Public Feed
+
+<mark style="color:blue;">`GET`</mark> `/feed`
+
+{% tabs %}
+{% tab title="200" %}
+```json
+{
+    "_message": "String",
+    "posts": {"posts"}
+}
+```
+{% endtab %}
+{% endtabs %}
+
+### User Feed
+
+<mark style="color:blue;">`GET`</mark> `/feed/user`
+
+Must be a user token with `feed.get`&#x20;
+
+{% tabs %}
+{% tab title="200" %}
+```json
+{
+    "_message": "String",
+    "posts": {"posts"}
+}
+```
+{% endtab %}
+{% endtabs %}
+
