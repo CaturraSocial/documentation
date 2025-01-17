@@ -17,12 +17,18 @@ layout:
 
 ### Get User
 
-#### Notes:
+<mark style="color:blue;">`GET`</mark> `/user/{UUID}`
+
+#### Notes
 
 * If left empty it will get the owner of the token info
 * If the token doesn't have the <mark style="color:yellow;">`user.email`</mark> scope you will not get the email of that user
 
-<mark style="color:blue;">`GET`</mark> `/user/{UUID}`
+#### Scopes
+
+> <mark style="color:yellow;">`user.get`</mark> / <mark style="color:yellow;">`user.email`</mark>
+
+#### Response
 
 {% tabs %}
 {% tab title="200" %}
@@ -46,6 +52,12 @@ layout:
 ### Follow/Unfollow
 
 <mark style="color:orange;">`PUT`</mark> `/user/{UUID}/follow`
+
+#### Scopes
+
+> <mark style="color:yellow;">`user.get`</mark>, <mark style="color:yellow;">`user.follow`</mark>
+
+#### Response
 
 {% tabs %}
 {% tab title="200" %}

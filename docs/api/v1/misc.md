@@ -19,6 +19,8 @@ layout:
 
 <mark style="color:blue;">`GET`</mark> `/ping`
 
+#### Response
+
 {% tabs %}
 {% tab title="200" %}
 ```json

@@ -19,6 +19,8 @@ layout:
 
 <mark style="color:blue;">`GET`</mark> `/feed`
 
+#### Response
+
 {% tabs %}
 {% tab title="200" %}
 ```json
@@ -34,7 +36,11 @@ layout:
 
 <mark style="color:blue;">`GET`</mark> `/feed/user`
 
+#### Notes
+
 Must be a user token with <mark style="color:yellow;">`feed.get`</mark>&#x20;
+
+#### Response
 
 {% tabs %}
 {% tab title="200" %}
