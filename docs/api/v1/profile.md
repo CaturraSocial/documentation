@@ -17,12 +17,9 @@ layout:
 
 ### Update Profile
 
-Edit a user account
-
 #### Scopes:
 
-* `user.get`
-* `user.edit`
+> <mark style="color:yellow;">`user.get`</mark>, <mark style="color:yellow;">`user.edit`</mark>
 
 <mark style="color:purple;">`PATCH`</mark> `/profile`
 

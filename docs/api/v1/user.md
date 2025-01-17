@@ -17,12 +17,10 @@ layout:
 
 ### Get User
 
-Get the user info of the provided `UUID`
-
 #### Notes:
 
 * If left empty it will get the owner of the token info
-* If the token doesn't have the `user.email` scope you will not get the email of that user
+* If the token doesn't have the <mark style="color:yellow;">`user.email`</mark> scope you will not get the email of that user
 
 <mark style="color:blue;">`GET`</mark> `/user/{UUID}`
 
@@ -45,13 +43,9 @@ Get the user info of the provided `UUID`
 {% endtab %}
 {% endtabs %}
 
-
-
 ### Follow/Unfollow
 
-Follow/Unfollow a user
-
-<mark style="color:orange;">`PUT`</mark> `/follow/{UUID}`
+<mark style="color:orange;">`PUT`</mark> `/user/{UUID}/follow`
 
 {% tabs %}
 {% tab title="200" %}
@@ -64,4 +58,3 @@ Follow/Unfollow a user
 {% endcode %}
 {% endtab %}
 {% endtabs %}
-

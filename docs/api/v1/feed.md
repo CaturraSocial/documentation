@@ -34,7 +34,7 @@ layout:
 
 <mark style="color:blue;">`GET`</mark> `/feed/user`
 
-Must be a user token with `feed.get`&#x20;
+Must be a user token with <mark style="color:yellow;">`feed.get`</mark>&#x20;
 
 {% tabs %}
 {% tab title="200" %}

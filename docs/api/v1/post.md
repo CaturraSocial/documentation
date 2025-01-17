@@ -19,6 +19,10 @@ So many changes will be made here as we perfect the wording of posts and replies
 
 ### Get Post
 
+#### Scopes:
+
+> <mark style="color:yellow;">`post.get`</mark>
+
 <mark style="color:blue;">`GET`</mark> `/post/{UUID}`
 
 {% tabs %}
@@ -60,3 +64,51 @@ So many changes will be made here as we perfect the wording of posts and replies
 {% endtab %}
 {% endtabs %}
 
+### Update Post
+
+<mark style="color:purple;">`PATCH`</mark> `/post/{UUID}`
+
+| Name    | Type    | Notes              |
+| ------- | ------- | ------------------ |
+| content | String  | Max 500 Characters |
+| lock    | Boolean |                    |
+
+{% tabs %}
+{% tab title="200" %}
+```json
+{
+    "uuid": "string",
+    "post": {"json"}
+}
+```
+{% endtab %}
+{% endtabs %}
+
+### Delete Post
+
+<mark style="color:red;">`DELETE`</mark> `/post/{UUID}`
+
+{% tabs %}
+{% tab title="200" %}
+```json
+{
+    "uuid": "string",
+    "post": {"json"}
+}
+```
+{% endtab %}
+{% endtabs %}
+
+### Like/Unlike
+
+<mark style="color:orange;">`PUT`</mark> `/post/{UUID}/like`
+
+{% tabs %}
+{% tab title="200" %}
+```json
+{
+    "_message": "string"
+}
+```
+{% endtab %}
+{% endtabs %}
