@@ -23,7 +23,7 @@ layout:
 {% tab title="200" %}
 ```json
 {
-    "_message": "String",
+    "_message": "string",
     "posts": {"posts"}
 }
 ```
@@ -40,7 +40,7 @@ Must be a user token with `feed.get`&#x20;
 {% tab title="200" %}
 ```json
 {
-    "_message": "String",
+    "_message": "string",
     "posts": {"posts"}
 }
 ```
