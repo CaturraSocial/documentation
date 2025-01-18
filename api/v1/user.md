@@ -26,7 +26,7 @@ layout:
 
 #### Scopes
 
-> <mark style="color:yellow;">`user.get`</mark> / <mark style="color:yellow;">`user.email`</mark>
+> <mark style="color:yellow;">`user.get`</mark>, <mark style="color:yellow;">`user.email`</mark>
 
 #### Response
 

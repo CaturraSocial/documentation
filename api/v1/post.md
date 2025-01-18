@@ -37,7 +37,7 @@ So many changes will be made here as we perfect the wording of posts and replies
     "content": "string",
     "from": "string",
     "lock": "boolean",
-    "replies": {"json"}
+    "replies": {"post object"}
 }
 ```
 {% endtab %}
@@ -68,7 +68,7 @@ So many changes will be made here as we perfect the wording of posts and replies
 {
     "uuid": "string",
     "parent": "string",
-    "post": {"json"}
+    "post": {"post object"}
 }
 ```
 {% endtab %}
@@ -96,7 +96,7 @@ So many changes will be made here as we perfect the wording of posts and replies
 ```json
 {
     "uuid": "string",
-    "post": {"json"}
+    "post": {"post object"}
 }
 ```
 {% endtab %}
@@ -117,7 +117,7 @@ So many changes will be made here as we perfect the wording of posts and replies
 ```json
 {
     "uuid": "string",
-    "post": {"json"}
+    "post": {"post object"}
 }
 ```
 {% endtab %}

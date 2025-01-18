@@ -39,7 +39,7 @@ Everything here can be done with the posts API. These endpoints are to help you 
     "content": "string",
     "from": "string",
     "lock": "boolean",
-    "replies": {"json"}
+    "replies": {"post object"}
 }
 ```
 {% endtab %}
@@ -70,7 +70,7 @@ Everything here can be done with the posts API. These endpoints are to help you 
 {
     "uuid": "string",
     "parent": "string",
-    "reply": {"json"}
+    "reply": {"post object"}
 }
 ```
 {% endtab %}
@@ -98,7 +98,7 @@ Everything here can be done with the posts API. These endpoints are to help you 
 ```json
 {
     "uuid": "string",
-    "reply": {"json"}
+    "reply": {"post object"}
 }
 ```
 {% endtab %}
@@ -119,7 +119,7 @@ Everything here can be done with the posts API. These endpoints are to help you 
 ```json
 {
     "uuid": "string",
-    "reply": {"json"}
+    "reply": {"post object"}
 }
 ```
 {% endtab %}
