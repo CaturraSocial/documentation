@@ -47,7 +47,7 @@ Everything here can be done with the posts API. These endpoints are to help you 
 
 ### Send Reply
 
-<mark style="color:orange;">`PUT`</mark> `/reply`
+<mark style="color:orange;">`POST`</mark> `/reply`
 
 #### Scopes
 
