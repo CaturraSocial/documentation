@@ -26,7 +26,7 @@ layout:
 ```json
 {
     "_message": "string",
-    "posts": {"posts"}
+    "posts": {"post object"}
 }
 ```
 {% endtab %}
@@ -47,7 +47,7 @@ Must be a user token with <mark style="color:yellow;">`feed.get`</mark>&#x20;
 ```json
 {
     "_message": "string",
-    "posts": {"posts"}
+    "posts": {"post object"}
 }
 ```
 {% endtab %}

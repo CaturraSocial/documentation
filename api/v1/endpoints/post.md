@@ -125,7 +125,7 @@ So many changes will be made here as we perfect the wording of posts and replies
 
 ### Like/Unlike
 
-<mark style="color:orange;">`PUT`</mark> `/post/{UUID}/like`
+<mark style="color:orange;">`PUT`</mark> `/like/{UUID}`
 
 #### Scopes
 

@@ -51,7 +51,7 @@ layout:
 
 ### Follow/Unfollow
 
-<mark style="color:orange;">`PUT`</mark> `/user/{UUID}/follow`
+<mark style="color:orange;">`PUT`</mark> `/follow/{UUID}`
 
 #### Scopes
 
@@ -68,5 +68,45 @@ layout:
 }
 ```
 {% endcode %}
+{% endtab %}
+{% endtabs %}
+
+### Following
+
+<mark style="color:blue;">`GET`</mark> `/follow/{UUID}/following`
+
+#### Scopes
+
+> <mark style="color:yellow;">`user.get`</mark>, <mark style="color:yellow;">`user.following.get`</mark>
+
+#### Response
+
+{% tabs %}
+{% tab title="200" %}
+```json
+{
+    "following": ["array"]
+}
+```
+{% endtab %}
+{% endtabs %}
+
+### Followers
+
+<mark style="color:blue;">`GET`</mark> `/follow/{UUID}/followers`
+
+#### Scopes
+
+> <mark style="color:yellow;">`user.get`</mark>, <mark style="color:yellow;">`user.followers.get`</mark>
+
+#### Response
+
+{% tabs %}
+{% tab title="200" %}
+```json
+{
+    "followers": ["array"]
+}
+```
 {% endtab %}
 {% endtabs %}

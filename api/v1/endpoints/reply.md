@@ -127,7 +127,7 @@ Everything here can be done with the posts API. These endpoints are to help you 
 
 ### Like/Unlike
 
-<mark style="color:orange;">`PUT`</mark> `/reply/{UUID}/like`
+<mark style="color:orange;">`PUT`</mark> `/like/{UUID}`
 
 #### Scopes
 
