@@ -18,8 +18,8 @@ layout:
 These docs are still being worked on, anything could/will change before being finalised.
 {% endhint %}
 
-|            Docs           |          Note          |
-| :-----------------------: | :--------------------: |
-|        [API](api/)        | API is being worked on |
-|      [OAuth](oauth/)      |      Being decided     |
-| [WebSocket](websocket.md) |      Being decided     |
+|            Docs           |           Note           |
+| :-----------------------: | :----------------------: |
+|        [API](api/)        |  API is being worked on  |
+|      [OAuth](oauth/)      | OAuth is being worked on |
+| [WebSocket](websocket.md) |       Being decided      |
