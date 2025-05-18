@@ -19,15 +19,15 @@ layout:
 Everything here can be done with the posts API. These endpoints are to help you easily understand the difference between a post and a reply.
 {% endhint %}
 
-### Get Reply
+## Get Reply
 
 <mark style="color:blue;">`GET`</mark> `/reply/{UUID}`
 
-#### Scopes
+### Scopes
 
 > <mark style="color:yellow;">`reply.get`</mark>
 
-#### Response
+### Response
 
 {% tabs %}
 {% tab title="200" %}
@@ -45,15 +45,15 @@ Everything here can be done with the posts API. These endpoints are to help you 
 {% endtab %}
 {% endtabs %}
 
-### Send Reply
+## Send Reply
 
 <mark style="color:yellow;">`POST`</mark> `/reply`
 
-#### Scopes
+### Scopes
 
 > <mark style="color:yellow;">`reply.get`</mark>, <mark style="color:yellow;">`reply.post`</mark>
 
-#### Body
+### Body
 
 | Name    | Type    | Notes                 |
 | ------- | ------- | --------------------- |
@@ -62,7 +62,7 @@ Everything here can be done with the posts API. These endpoints are to help you 
 | from    | String  | Can be left as `null` |
 | parent  | String  | read about Replies    |
 
-#### Response
+### Response
 
 {% tabs %}
 {% tab title="200" %}
@@ -76,22 +76,22 @@ Everything here can be done with the posts API. These endpoints are to help you 
 {% endtab %}
 {% endtabs %}
 
-### Update Reply
+## Update Reply
 
 <mark style="color:purple;">`PATCH`</mark> `/reply/{UUID}`
 
-#### Scopes
+### Scopes
 
 > <mark style="color:yellow;">`reply.get`</mark>, <mark style="color:yellow;">`reply.edit`</mark>
 
-#### Body
+### Body
 
 | Name    | Type    | Notes              |
 | ------- | ------- | ------------------ |
 | content | String  | Max 500 Characters |
 | lock    | Boolean |                    |
 
-#### Response
+### Response
 
 {% tabs %}
 {% tab title="200" %}
@@ -104,15 +104,15 @@ Everything here can be done with the posts API. These endpoints are to help you 
 {% endtab %}
 {% endtabs %}
 
-### Delete Reply
+## Delete Reply
 
 <mark style="color:red;">`DELETE`</mark> `/reply/{UUID}`
 
-#### Scopes
+### Scopes
 
 > <mark style="color:yellow;">`reply.get`</mark>, <mark style="color:yellow;">`reply.delete`</mark>
 
-#### Response
+### Response
 
 {% tabs %}
 {% tab title="200" %}
@@ -125,15 +125,15 @@ Everything here can be done with the posts API. These endpoints are to help you 
 {% endtab %}
 {% endtabs %}
 
-### Like/Unlike
+## Like/Unlike
 
 <mark style="color:orange;">`PUT`</mark> `/like/{UUID}`
 
-#### Scopes
+### Scopes
 
 > <mark style="color:yellow;">`reply.get`</mark>, <mark style="color:yellow;">`reply.like`</mark>
 
-#### Response
+### Response
 
 {% tabs %}
 {% tab title="200" %}

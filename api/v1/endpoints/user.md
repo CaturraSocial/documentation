@@ -15,20 +15,20 @@ layout:
 
 # User
 
-### Get User
+## Get User
 
 <mark style="color:blue;">`GET`</mark> `/user/{UUID}`
 
-#### Notes
+### Notes
 
 * If left empty it will get the owner of the token info
 * If the token doesn't have the <mark style="color:yellow;">`user.email`</mark> scope you will not get the email of that user
 
-#### Scopes
+### Scopes
 
 > <mark style="color:yellow;">`user.get`</mark>, <mark style="color:yellow;">`user.email`</mark>
 
-#### Response
+### Response
 
 {% tabs %}
 {% tab title="200" %}
@@ -49,15 +49,15 @@ layout:
 {% endtab %}
 {% endtabs %}
 
-### Follow/Unfollow
+## Follow/Unfollow
 
 <mark style="color:orange;">`PUT`</mark> `/follow/{UUID}`
 
-#### Scopes
+### Scopes
 
 > <mark style="color:yellow;">`user.get`</mark>, <mark style="color:yellow;">`user.follow`</mark>
 
-#### Response
+### Response
 
 {% tabs %}
 {% tab title="200" %}
@@ -71,15 +71,15 @@ layout:
 {% endtab %}
 {% endtabs %}
 
-### Following
+## Following
 
 <mark style="color:blue;">`GET`</mark> `/follow/{UUID}/following`
 
-#### Scopes
+### Scopes
 
 > <mark style="color:yellow;">`user.get`</mark>, <mark style="color:yellow;">`user.following.get`</mark>
 
-#### Response
+### Response
 
 {% tabs %}
 {% tab title="200" %}
@@ -91,15 +91,15 @@ layout:
 {% endtab %}
 {% endtabs %}
 
-### Followers
+## Followers
 
 <mark style="color:blue;">`GET`</mark> `/follow/{UUID}/followers`
 
-#### Scopes
+### Scopes
 
 > <mark style="color:yellow;">`user.get`</mark>, <mark style="color:yellow;">`user.followers.get`</mark>
 
-#### Response
+### Response
 
 {% tabs %}
 {% tab title="200" %}

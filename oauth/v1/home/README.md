@@ -19,15 +19,15 @@ layout:
 Nothing here is final, expect massive changes between now and the launch of V1.
 {% endhint %}
 
-### Welcome
+## Welcome
 
 to the V1 OAuth here is a comprehensive doc on how to use our OAuth for your applications. Make sure to read everything, For any extra explanations please head over to our [discord](https://discord.gg/NkUtMFraHg).
 
-### URL
+## URL
 
 `https://caturra.social/api/oauth`
 
-### Errors
+## Errors
 
 This is how ALL errors will be sent back. If anything else is returned, report it to the developers.
 

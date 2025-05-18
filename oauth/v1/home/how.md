@@ -15,37 +15,45 @@ layout:
 
 # How To
 
-### Creating Applications
+## Creating Applications
 
 Head over to [http://caturra.social/dashboard/applications](http://caturra.social/dashboard/applications) and create an application.
 
 <figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Applications Creation Screen</p></figcaption></figure>
 
-### Oauth link
+## Oauth link
 
 After creating the application, you should be able to copy a simple OAuth link\
 `http://caturra.social/oauth/authorise?application_id=e2a5d0ad-93c4-4896-93de-95ea864bd18f&redirect_uri=https://caturra.social/callback/caturra`
 
 <figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Authorisation page with default scopes</p></figcaption></figure>
 
-### Adding scopes
-
-Adding default scopes is simple, simply add `&scopes=` to the end of the URL using the scopes from [scopes.md](../../../api/v1/scopes.md "mention"). This can be a string separated by a comma `&scopes=user.email,user.edit` OR as an array `&scopes=["user.email","user.edit"]`&#x20;
-
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Authorisation page with custom scopes</p></figcaption></figure>
-
-### User Authorised
-
-Once a user authorises your application, they will be redirected to your redirect URI with the parameter of `&code=` You can use this to get an access token and a refresh token.
-
-### Getting an access Token
+### Adding default scopes
 
 {% hint style="info" %}
 ### Note:
 
 ***
 
-Access Tokens expire after 7 days, and Refresh Tokens expire after 30 days
+Users can change the default scopes within the authorise page.
+{% endhint %}
+
+Adding default scopes is simple; simply add `&scopes=` to the end of the URL using the scopes from [scopes.md](../../../api/v1/scopes.md "mention"). This can be a string separated by a comma `&scopes=user.email,user.edit` OR as an array `&scopes=["user.email","user.edit"]`&#x20;
+
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Authorisation page with custom scopes</p></figcaption></figure>
+
+## User Authorised
+
+Once a user authorises your application, they will be redirected to your redirect URI with a `&code=` parameter. You can use this to get an access and refresh token.
+
+## Getting an access Token
+
+{% hint style="info" %}
+### Note:
+
+***
+
+By default, access tokens expire after 7 days, and refresh tokens expire after 30 days. Make sure to use the information provided by the api to determine when your tokens expire.
 {% endhint %}
 
 Getting an access token is as easy as making a post request to `/code`
@@ -54,9 +62,9 @@ Getting an access token is as easy as making a post request to `/code`
 
 #### Body
 
-| Name | Type   | Notes |
-| ---- | ------ | ----- |
-| code | String |       |
+| Name | Type   |
+| ---- | ------ |
+| code | String |
 
 #### Response
 
@@ -79,7 +87,7 @@ Getting an access token is as easy as making a post request to `/code`
 {% endtab %}
 {% endtabs %}
 
-### Refreshing a Token
+## Refreshing a Token
 
 Once a token expires, you can use the refresh token to gain a brand new token to use.
 
@@ -87,9 +95,7 @@ Once a token expires, you can use the refresh token to gain a brand new token to
 
 #### Body
 
-| Name         | Type   | Notes |
-| ------------ | ------ | ----- |
-| refreshToken | String |       |
+<table><thead><tr><th>Name</th><th valign="middle">Type</th></tr></thead><tbody><tr><td>refreshToken</td><td valign="middle">String</td></tr></tbody></table>
 
 #### Response
 

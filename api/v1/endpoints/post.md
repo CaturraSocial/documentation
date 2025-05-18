@@ -17,15 +17,15 @@ layout:
 
 So many changes will be made here as we perfect the wording of posts and replies and how they interact with one another.
 
-### Get Post
+## Get Post
 
 <mark style="color:blue;">`GET`</mark> `/post/{UUID}`
 
-#### Scopes
+### Scopes
 
 > <mark style="color:yellow;">`post.get`</mark> / <mark style="color:yellow;">`reply.get`</mark>
 
-#### Response
+### Response
 
 {% tabs %}
 {% tab title="200" %}
@@ -43,15 +43,15 @@ So many changes will be made here as we perfect the wording of posts and replies
 {% endtab %}
 {% endtabs %}
 
-### Send Post
+## Send Post
 
 <mark style="color:yellow;">`POST`</mark> `/post`
 
-#### Scopes
+### Scopes
 
 > <mark style="color:yellow;">`post.get`</mark>, <mark style="color:yellow;">`post.send`</mark> / <mark style="color:yellow;">`reply.get`</mark>, <mark style="color:yellow;">`reply.post`</mark>
 
-#### Body
+### Body
 
 | Name    | Type    | Notes                 |
 | ------- | ------- | --------------------- |
@@ -60,7 +60,7 @@ So many changes will be made here as we perfect the wording of posts and replies
 | from    | String  | Can be left as `null` |
 | parent  | String  | read about Replies    |
 
-#### Response
+### Response
 
 {% tabs %}
 {% tab title="200" %}
@@ -74,22 +74,22 @@ So many changes will be made here as we perfect the wording of posts and replies
 {% endtab %}
 {% endtabs %}
 
-### Update Post
+## Update Post
 
 <mark style="color:purple;">`PATCH`</mark> `/post/{UUID}`
 
-#### Scopes
+### Scopes
 
 > <mark style="color:yellow;">`post.get`</mark>, <mark style="color:yellow;">`post.edit`</mark> / <mark style="color:yellow;">`reply.get`</mark>, <mark style="color:yellow;">`reply.edit`</mark>
 
-#### Body
+### Body
 
 | Name    | Type    | Notes              |
 | ------- | ------- | ------------------ |
 | content | String  | Max 500 Characters |
 | lock    | Boolean |                    |
 
-#### Response
+### Response
 
 {% tabs %}
 {% tab title="200" %}
@@ -102,15 +102,15 @@ So many changes will be made here as we perfect the wording of posts and replies
 {% endtab %}
 {% endtabs %}
 
-### Delete Post
+## Delete Post
 
 <mark style="color:red;">`DELETE`</mark> `/post/{UUID}`
 
-#### Scopes
+### Scopes
 
 > <mark style="color:yellow;">`post.get`</mark>, <mark style="color:yellow;">`post.delete`</mark> / <mark style="color:yellow;">`reply.get`</mark>, <mark style="color:yellow;">`reply.delete`</mark>
 
-#### Response
+### Response
 
 {% tabs %}
 {% tab title="200" %}
@@ -123,15 +123,15 @@ So many changes will be made here as we perfect the wording of posts and replies
 {% endtab %}
 {% endtabs %}
 
-### Like/Unlike
+## Like/Unlike
 
 <mark style="color:orange;">`PUT`</mark> `/like/{UUID}`
 
-#### Scopes
+### Scopes
 
 > <mark style="color:yellow;">`post.get`</mark>, <mark style="color:yellow;">`post.like`</mark> / <mark style="color:yellow;">`reply.get`</mark>, <mark style="color:yellow;">`reply.like`</mark>
 
-#### Response
+### Response
 
 {% tabs %}
 {% tab title="200" %}

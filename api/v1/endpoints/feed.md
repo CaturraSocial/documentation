@@ -15,11 +15,11 @@ layout:
 
 # Feed
 
-### Public Feed
+## Public Feed
 
 <mark style="color:blue;">`GET`</mark> `/feed`
 
-#### Response
+### Response
 
 {% tabs %}
 {% tab title="200" %}
@@ -32,15 +32,15 @@ layout:
 {% endtab %}
 {% endtabs %}
 
-### User Feed
+## User Feed
 
 <mark style="color:blue;">`GET`</mark> `/feed/user`
 
-#### Notes
+### Notes
 
 Must be a user token with <mark style="color:yellow;">`feed.get`</mark>&#x20;
 
-#### Response
+### Response
 
 {% tabs %}
 {% tab title="200" %}

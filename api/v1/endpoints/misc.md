@@ -15,11 +15,11 @@ layout:
 
 # Misc
 
-### Ping the API
+## Ping the API
 
 <mark style="color:blue;">`GET`</mark> `/ping`
 
-#### Response
+### Response
 
 {% tabs %}
 {% tab title="200" %}
