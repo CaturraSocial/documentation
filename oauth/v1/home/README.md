@@ -21,18 +21,11 @@ Nothing here is final, expect massive changes between now and the launch of V1.
 
 ### Welcome
 
-to the V1 API here is a comprehensive doc on how to use our API for your applications. Make sure to read everything, For any extra explanations please head over to our [discord](https://discord.gg/NkUtMFraHg).
+to the V1 OAuth here is a comprehensive doc on how to use our OAuth for your applications. Make sure to read everything, For any extra explanations please head over to our [discord](https://discord.gg/NkUtMFraHg).
 
 ### URL
 
-`https://caturra.social/api/v1`
-
-### **Headers**
-
-| Name          | Value              |
-| ------------- | ------------------ |
-| Content-Type  | `application/json` |
-| Authorization | `Bearer <token>`   |
+`https://caturra.social/api/oauth`
 
 ### Errors
 

@@ -1,0 +1,113 @@
+---
+icon: semicolon
+layout:
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: false
+---
+
+# How To
+
+### Creating Applications
+
+Head over to [http://caturra.social/dashboard/applications](http://caturra.social/dashboard/applications) and create an application.
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Applications Creation Screen</p></figcaption></figure>
+
+### Oauth link
+
+After creating the application, you should be able to copy a simple OAuth link\
+`http://caturra.social/oauth/authorise?application_id=e2a5d0ad-93c4-4896-93de-95ea864bd18f&redirect_uri=https://caturra.social/callback/caturra`
+
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Authorisation page with default scopes</p></figcaption></figure>
+
+### Adding scopes
+
+Adding default scopes is simple, simply add `&scopes=` to the end of the URL using the scopes from [scopes.md](../../../api/v1/scopes.md "mention"). This can be a string separated by a comma `&scopes=user.email,user.edit` OR as an array `&scopes=["user.email","user.edit"]`&#x20;
+
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Authorisation page with custom scopes</p></figcaption></figure>
+
+### User Authorised
+
+Once a user authorises your application, they will be redirected to your redirect URI with the parameter of `&code=` You can use this to get an access token and a refresh token.
+
+### Getting an access Token
+
+{% hint style="info" %}
+### Note:
+
+***
+
+Access Tokens expire after 7 days, and Refresh Tokens expire after 30 days
+{% endhint %}
+
+Getting an access token is as easy as making a post request to `/code`
+
+<mark style="color:yellow;">`POST`</mark> `/code`
+
+#### Body
+
+| Name | Type   | Notes |
+| ---- | ------ | ----- |
+| code | String |       |
+
+#### Response
+
+{% tabs %}
+{% tab title="200" %}
+```json
+{
+    "token": "Access Token",
+    "token_expires_at": "2025-05-25 12:00:00",
+    "refresh_token": "Refresh Token",
+    "refresh_token_expires_at": "2025-06-18 12:00:00",
+    "scopes": [
+        "user.get",
+        "user.email",
+        "user.edit",
+        "feed.get"
+    ]
+}
+```
+{% endtab %}
+{% endtabs %}
+
+### Refreshing a Token
+
+Once a token expires, you can use the refresh token to gain a brand new token to use.
+
+<mark style="color:yellow;">`POST`</mark> `/refreshtoken`
+
+#### Body
+
+| Name         | Type   | Notes |
+| ------------ | ------ | ----- |
+| refreshToken | String |       |
+
+#### Response
+
+{% tabs %}
+{% tab title="200" %}
+```json
+{
+    "token": "Access Token",
+    "token_expires_at": "2025-05-25 12:00:00",
+    "refresh_token": "Refresh Token",
+    "refresh_token_expires_at": "2025-06-18 12:00:00",
+    "scopes": [
+        "user.get",
+        "user.email",
+        "user.edit",
+        "feed.get"
+    ]
+}
+```
+{% endtab %}
+{% endtabs %}

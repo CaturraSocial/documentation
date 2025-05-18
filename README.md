@@ -21,5 +21,5 @@ These docs are still being worked on, anything could/will change before being fi
 |            Docs           |          Note          |
 | :-----------------------: | :--------------------: |
 |        [API](api/)        | API is being worked on |
-|     [OAuth](oauth.md)     |      Being decided     |
+|      [OAuth](oauth/)      |      Being decided     |
 | [WebSocket](websocket.md) |      Being decided     |
