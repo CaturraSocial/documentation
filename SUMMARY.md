@@ -16,6 +16,6 @@
 * [OAuth](oauth/README.md)
   * [V1](oauth/v1/README.md)
     * [Home](oauth/v1/home/README.md)
-      * [How To](oauth/v1/home/misc.md)
+      * [How To](oauth/v1/home/how.md)
 * [WebSocket](websocket.md)
 * [Caturra Code Standerd](caturra-code-standerd.md)
