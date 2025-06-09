@@ -29,17 +29,16 @@ So many changes will be made here as we perfect the wording of posts and replies
 
 {% tabs %}
 {% tab title="200" %}
-```json
-{
+<pre class="language-json"><code class="lang-json">{
     "uuid": "string",
-    "parent": "string",
-    "author": "string",
+    "parent": <a data-footnote-ref href="#user-content-fn-1">{"parent object"}</a>,
+    "author": {"user object"},
     "content": "string",
     "from": "string",
-    "lock": "boolean",
-    "replies": {"post object"}
+    "locked": "boolean",
+    "replies": <a data-footnote-ref href="#user-content-fn-2">{"reply object"}</a>
 }
-```
+</code></pre>
 {% endtab %}
 {% endtabs %}
 
@@ -53,12 +52,11 @@ So many changes will be made here as we perfect the wording of posts and replies
 
 ### Body
 
-| Name    | Type    | Notes                 |
-| ------- | ------- | --------------------- |
-| content | String  | Max 500 Characters    |
-| lock    | Boolean |                       |
-| from    | String  | Can be left as `null` |
-| parent  | String  | read about Replies    |
+| Name    | Type    | Notes                                    |
+| ------- | ------- | ---------------------------------------- |
+| content | String  | Max 500 Characters                       |
+| locked  | Boolean |                                          |
+| parent  | String  | The ID of the post you want to reply too |
 
 ### Response
 
@@ -67,7 +65,7 @@ So many changes will be made here as we perfect the wording of posts and replies
 ```json
 {
     "uuid": "string",
-    "parent": "string",
+    "parent": {"parent object"},
     "post": {"post object"}
 }
 ```
@@ -142,3 +140,7 @@ So many changes will be made here as we perfect the wording of posts and replies
 ```
 {% endtab %}
 {% endtabs %}
+
+[^1]: Excludes Replies
+
+[^2]: Exclude Replies and Parent Data

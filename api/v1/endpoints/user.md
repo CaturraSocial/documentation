@@ -32,7 +32,7 @@ layout:
 
 {% tabs %}
 {% tab title="200" %}
-{% code lineNumbers="true" fullWidth="false" %}
+{% code fullWidth="false" %}
 ```json
 {
     "uuid": "string",
@@ -61,13 +61,11 @@ layout:
 
 {% tabs %}
 {% tab title="200" %}
-{% code lineNumbers="true" %}
 ```json
 {
     "_message": "string"
 }
 ```
-{% endcode %}
 {% endtab %}
 {% endtabs %}
 
