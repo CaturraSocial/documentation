@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Public Documentation](README.md)
+* [Changelog](changelog.md)
 * [API](api/README.md)
   * [V1 API Documentation](api/v1-old.md)
   * [V1](api/v1/README.md)
