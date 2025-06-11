@@ -18,6 +18,6 @@ layout:
 
 ## V1.0 - 00/00/25
 
-Some Info
+Initial Release.
 
 ***
