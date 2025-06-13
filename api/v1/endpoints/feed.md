@@ -38,7 +38,7 @@ layout:
 
 ### Notes
 
-Must be a user token with <mark style="color:yellow;">`feed.get`</mark>&#x20;
+> <mark style="color:yellow;">`feed.get`</mark>&#x20;
 
 ### Response
 

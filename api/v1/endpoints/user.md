@@ -21,8 +21,8 @@ layout:
 
 ### Notes
 
-* If left empty it will get the owner of the token info
-* If the token doesn't have the <mark style="color:yellow;">`user.email`</mark> scope you will not get the email of that user
+* If left empty, it will get the owner of the token info
+* You can only get the owner of the tokens email, anyone else will always show as null
 
 ### Scopes
 
