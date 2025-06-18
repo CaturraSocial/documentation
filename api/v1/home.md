@@ -16,12 +16,12 @@ layout:
 # Home
 
 {% hint style="danger" %}
-Nothing here is final, expect massive changes between now and the launch of V1.
+Everything here is mostly final, wording and how the system works could still be changed before we launch
 {% endhint %}
 
 ## Welcome
 
-to the V1 API here is a comprehensive doc on how to use our API for your applications. Make sure to read everything, For any extra explanations please head over to our [discord](https://discord.gg/NkUtMFraHg).
+to the V1 API, here is a comprehensive doc on how to use our API for your applications. Make sure to read everything. For any extra explanations, please head over to our [Discord](https://discord.gg/NkUtMFraHg).
 
 ## URL
 

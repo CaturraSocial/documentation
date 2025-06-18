@@ -15,6 +15,6 @@ layout:
 # WebSocket
 
 {% hint style="danger" %}
-WebSockets has nothing as of yet, please come back later.
+WebSockets have nothing so far; come back later.
 {% endhint %}
 
