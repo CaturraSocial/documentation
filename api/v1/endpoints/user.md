@@ -63,7 +63,15 @@ layout:
 {% tab title="200" %}
 ```json
 {
-    "_message": "string"
+    "action": "followed",
+    "uuid": "string"
+}
+```
+
+```json
+{
+    "action": "unfollowed",
+    "uuid": "string"
 }
 ```
 {% endtab %}
