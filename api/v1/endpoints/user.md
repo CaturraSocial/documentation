@@ -51,7 +51,7 @@ layout:
 
 ## Follow/Unfollow
 
-<mark style="color:orange;">`PUT`</mark> `/follow/{UUID}`
+<mark style="color:yellow;">`POST`</mark> `/follow/{UUID}`
 
 ### Scopes
 
