@@ -33,7 +33,7 @@ layout:
 {% tab title="200" %}
 ```json
 {
-    "_message": {json}
+    "user": {"user object"}
 }
 ```
 {% endtab %}
