@@ -135,7 +135,15 @@ So many changes will be made here as we perfect the wording of posts and replies
 {% tab title="200" %}
 ```json
 {
-    "_message": "string"
+    "action": "liked",
+    "uuid": "string"
+}
+```
+
+```json
+{
+    "action": "unliked",
+    "uuid": "string"
 }
 ```
 {% endtab %}
