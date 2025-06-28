@@ -60,13 +60,13 @@ Getting an access token is as easy as making a post request to `/code`
 
 <mark style="color:yellow;">`POST`</mark> `/code`
 
-#### Body
+### Body
 
 | Name | Type   |
 | ---- | ------ |
 | code | String |
 
-#### Response
+### Response
 
 {% tabs %}
 {% tab title="200" %}
@@ -93,11 +93,11 @@ Once a token expires, you can use the refresh token to gain a brand new token to
 
 <mark style="color:yellow;">`POST`</mark> `/refreshtoken`
 
-#### Body
+### Body
 
 <table><thead><tr><th>Name</th><th valign="middle">Type</th></tr></thead><tbody><tr><td>refreshToken</td><td valign="middle">String</td></tr></tbody></table>
 
-#### Response
+### Response
 
 {% tabs %}
 {% tab title="200" %}
