@@ -1,16 +1,5 @@
 ---
 icon: envelopes-bulk
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: false
 ---
 
 # Post
@@ -85,7 +74,7 @@ So many changes will be made here as we perfect the wording of posts and replies
 | Name    | Type    | Notes              |
 | ------- | ------- | ------------------ |
 | content | String  | Max 500 Characters |
-| lock    | Boolean |                    |
+| locked  | Boolean |                    |
 
 ### Response
 
