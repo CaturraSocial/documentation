@@ -23,7 +23,7 @@ So many changes will be made here as we perfect the wording of posts and replies
     "parent": <a data-footnote-ref href="#user-content-fn-1">{"parent object"}</a>,
     "author": {"user object"},
     "content": "string",
-    "from": "string",
+    "from": {"application object"},
     "locked": "boolean",
     "replies": <a data-footnote-ref href="#user-content-fn-2">{"reply object"}</a>
 }
@@ -51,13 +51,16 @@ So many changes will be made here as we perfect the wording of posts and replies
 
 {% tabs %}
 {% tab title="200" %}
-```json
-{
+<pre class="language-json"><code class="lang-json">{
     "uuid": "string",
-    "parent": {"parent object"},
-    "post": {"post object"}
+    "parent": <a data-footnote-ref href="#user-content-fn-1">{"parent object"}</a>,
+    "author": {"user object"},
+    "content": "string",
+    "from": {"application object"},
+    "locked": "boolean",
+    "replies": <a data-footnote-ref href="#user-content-fn-2">{"reply object"}</a>
 }
-```
+</code></pre>
 {% endtab %}
 {% endtabs %}
 
@@ -82,8 +85,7 @@ So many changes will be made here as we perfect the wording of posts and replies
 {% tab title="200" %}
 ```json
 {
-    "uuid": "string",
-    "post": {"post object"}
+    "post object"
 }
 ```
 {% endtab %}
@@ -103,8 +105,7 @@ So many changes will be made here as we perfect the wording of posts and replies
 {% tab title="200" %}
 ```json
 {
-    "uuid": "string",
-    "post": {"post object"}
+    "post object"
 }
 ```
 {% endtab %}
