@@ -5,7 +5,7 @@ icon: square-rss
 # Feed
 
 {% hint style="danger" %}
-These endpoints are still actively being worked on; The responses are not final.
+These endpoints are not implemented yet.
 {% endhint %}
 
 ## Public Feed
@@ -18,8 +18,11 @@ These endpoints are still actively being worked on; The responses are not final.
 {% tab title="200" %}
 ```json
 {
-    "_message": "string",
-    "posts": {"post object"}
+    "feed": [
+        {"post object"},
+        {"post object"},
+        {"post object"}
+    ]
 }
 ```
 {% endtab %}
@@ -29,7 +32,7 @@ These endpoints are still actively being worked on; The responses are not final.
 
 <mark style="color:blue;">`GET`</mark> `/feed/user`
 
-### Notes
+### Scopes
 
 > <mark style="color:yellow;">`feed.get`</mark>&#x20;
 
@@ -39,8 +42,11 @@ These endpoints are still actively being worked on; The responses are not final.
 {% tab title="200" %}
 ```json
 {
-    "_message": "string",
-    "posts": {"post object"}
+    "feed": [
+        {"post object"},
+        {"post object"},
+        {"post object"}
+    ]
 }
 ```
 {% endtab %}
