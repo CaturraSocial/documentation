@@ -1,23 +1,12 @@
 ---
 icon: semicolon
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: false
 ---
 
 # How To
 
 ## Creating Applications
 
-Head over to [http://caturra.social/dashboard/applications](http://caturra.social/dashboard/applications) and create an application.
+Head over to [http://caturra.social/dashboard/applications](http://alpha.caturra.social/dashboard/applications) and create an application.
 
 <figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Applications Creation Screen</p></figcaption></figure>
 
