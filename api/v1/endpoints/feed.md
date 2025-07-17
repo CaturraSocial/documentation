@@ -1,19 +1,12 @@
 ---
 icon: square-rss
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: false
 ---
 
 # Feed
+
+{% hint style="danger" %}
+These endpoints are still actively being worked on; The responses are not final.
+{% endhint %}
 
 ## Public Feed
 
