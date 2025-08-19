@@ -1,17 +1,7 @@
 ---
 hidden: true
+noRobotsIndex: true
 icon: book-open
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: false
-  pagination:
-    visible: false
 ---
 
 # Changelog

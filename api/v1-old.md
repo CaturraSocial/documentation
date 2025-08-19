@@ -1,17 +1,6 @@
 ---
 description: This Document highlights everything that is included in our V1 api.
 hidden: true
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: false
 ---
 
 # V1 API Documentation

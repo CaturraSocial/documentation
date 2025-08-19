@@ -19,4 +19,6 @@
     * [Home](oauth/v1/home/README.md)
       * [How To](oauth/v1/home/how.md)
 * [WebSocket](websocket.md)
+* [Caturra Guidelines](guidelines/README.md)
+  * [Reports Guidelines](guidelines/reports-guidelines.md)
 * [Caturra Code Standerd](caturra-code-standerd.md)
