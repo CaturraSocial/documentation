@@ -4,13 +4,14 @@ icon: square-rss
 
 # Feed
 
-{% hint style="danger" %}
-These endpoints are not implemented yet.
-{% endhint %}
-
 ## Public Feed
 
-<mark style="color:blue;">`GET`</mark> `/feed`
+<mark style="color:blue;">`GET`</mark> `/feed/{page}`
+
+### Notes
+
+* `{page}` defaults to page 1 if left out
+* Each page shows 15 posts
 
 ### Response
 
@@ -30,7 +31,11 @@ These endpoints are not implemented yet.
 
 ## User Feed
 
-<mark style="color:blue;">`GET`</mark> `/feed/user`
+<mark style="color:blue;">`GET`</mark> `/feed/user/{page}`
+
+### Notes
+
+* same as above
 
 ### Scopes
 
