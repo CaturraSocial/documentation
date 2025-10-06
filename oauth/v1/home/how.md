@@ -6,14 +6,14 @@ icon: semicolon
 
 ## Creating Applications
 
-Head over to [http://caturra.social/dashboard/applications](http://alpha.caturra.social/dashboard/applications) and create an application.
+Head over to [https://caturra.app/dashboard/applications](https://caturra.app/dashboard/applications) and create an application.
 
 <figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Applications Creation Screen</p></figcaption></figure>
 
 ## Oauth link
 
 After creating the application, you should be able to copy a simple OAuth link\
-`http://caturra.social/oauth/authorise?application_id=e2a5d0ad-93c4-4896-93de-95ea864bd18f&redirect_uri=https://caturra.social/callback/caturra`
+`http://caturra.app/oauth/authorise?application_id=e2a5d0ad-93c4-4896-93de-95ea864bd18f&redirect_uri=https://caturra.app/callback/caturra`
 
 <figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Authorisation page with default scopes</p></figcaption></figure>
 

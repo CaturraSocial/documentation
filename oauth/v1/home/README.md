@@ -14,7 +14,7 @@ to the V1 OAuth, here is a comprehensive doc on how to use our OAuth for your ap
 
 ## URL
 
-`https://caturra.social/api/oauth`
+`https://caturra.app/api/oauth`
 
 ## Errors
 

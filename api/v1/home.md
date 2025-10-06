@@ -14,7 +14,7 @@ to the V1 API, here is a comprehensive doc on how to use our API for your applic
 
 ## URL
 
-`https://caturra.social/api/v1`
+`https://caturra.app/api/v1`
 
 ## **Headers**
 

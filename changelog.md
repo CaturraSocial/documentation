@@ -6,7 +6,7 @@ icon: book-open
 
 # Changelog
 
-## V1.0 - 00/00/25
+## V1.0 - 07/10/25
 
 Initial Release.
 
