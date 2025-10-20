@@ -10,8 +10,10 @@ icon: user
 
 ### Notes
 
-* If left empty, it will get the owner of the token info
-* You can only get the owner of the tokens email, anyone else will always show as null
+* If left empty, it will get the owner of the token's info
+  * You will only receive the email of the token owner if you have the <mark style="color:yellow;">`user.email`</mark> scope
+  * It will return `NULL` for both `email` and `email_verified`&#x20;
+* When requesting a specific user, the `email` and `email_verified` will not be returned
 
 ### Scopes
 
