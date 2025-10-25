@@ -14,6 +14,7 @@ icon: user
   * You will only receive the email of the token owner if you have the <mark style="color:yellow;">`user.email`</mark> scope
   * It will return `NULL` for both `email` and `email_verified`&#x20;
 * When requesting a specific user, the `email` and `email_verified` will not be returned
+* `avatar` currently returns a Gravatar URL; you can follow their docs for further customisation
 
 ### Scopes
 
@@ -29,6 +30,7 @@ icon: user
     "uuid": "string",
     "username": "string",
     "display_name": "string",
+    "avatar": "string",
     "email": "string",
     "email_verified": "boolean",
     "badge": ["array"],
