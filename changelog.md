@@ -20,6 +20,15 @@ layout:
 
 # Changelog
 
+## V25-10-27
+
+#### What's Changed
+
+* Added avatar to getUser
+  * We added avatars to our getUser requests. This currently gives you a Gravatar URL - We plan on building our own avatar and banner system in the future ◕⩊◕
+
+***
+
 ## V25-10-24
 
 #### What's Changed
