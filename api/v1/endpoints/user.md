@@ -35,6 +35,8 @@ icon: user
     "email_verified": "boolean",
     "badge": ["array"],
     "bio": "string",
+    "follow_count": int,
+    "following_count": int,
     "joined": timestamp
 }
 ```
@@ -44,7 +46,7 @@ icon: user
 
 ## Follow/Unfollow
 
-<mark style="color:yellow;">`POST`</mark> `/follow/{UUID}`
+<mark style="color:yellow;">`POST`</mark> `/user/{UUID}/follow`
 
 ### Scopes
 
@@ -72,7 +74,7 @@ icon: user
 
 ## Following
 
-<mark style="color:blue;">`GET`</mark> `/follow/{UUID}/following`
+<mark style="color:blue;">`GET`</mark> `/user/{UUID}/following`
 
 ### Scopes
 
@@ -92,7 +94,7 @@ icon: user
 
 ## Followers
 
-<mark style="color:blue;">`GET`</mark> `/follow/{UUID}/followers`
+<mark style="color:blue;">`GET`</mark> `/user/{UUID}/followers`
 
 ### Scopes
 

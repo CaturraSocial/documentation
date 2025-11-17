@@ -25,7 +25,9 @@ So many changes will be made here as we perfect the wording of posts and replies
     "content": "string",
     "from": {"application object"},
     "locked": "boolean",
-    "replies": <a data-footnote-ref href="#user-content-fn-2">{"reply object"}</a>
+    "replies": <a data-footnote-ref href="#user-content-fn-2">{"reply object"}</a>,
+    "like_count": int,
+    "created_at": timestamp
 }
 </code></pre>
 {% endtab %}
@@ -58,7 +60,9 @@ So many changes will be made here as we perfect the wording of posts and replies
     "content": "string",
     "from": {"application object"},
     "locked": "boolean",
-    "replies": <a data-footnote-ref href="#user-content-fn-2">{"reply object"}</a>
+    "replies": <a data-footnote-ref href="#user-content-fn-2">{"reply object"}</a>,
+    "like_count": int,
+    "created_at": timestamp
 }
 </code></pre>
 {% endtab %}
@@ -113,7 +117,7 @@ So many changes will be made here as we perfect the wording of posts and replies
 
 ## Like/Unlike
 
-<mark style="color:yellow;">`POST`</mark> `/like/{UUID}`
+<mark style="color:yellow;">`POST`</mark> `/post/{UUID}/like`
 
 ### Scopes
 
