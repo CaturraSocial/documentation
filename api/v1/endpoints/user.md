@@ -4,7 +4,7 @@ icon: user
 
 # User
 
-## Get User
+## User
 
 <mark style="color:blue;">`GET`</mark> `/user/{UUID}`
 
@@ -41,6 +41,31 @@ icon: user
 }
 ```
 {% endcode %}
+{% endtab %}
+{% endtabs %}
+
+## User Posts
+
+<mark style="color:blue;">`GET`</mark> `/user/{UUID}/posts/{page}`
+
+### Scopes
+
+> <mark style="color:yellow;">`user.get`</mark>, <mark style="color:yellow;">`post.get`</mark>
+
+### Response
+
+{% tabs %}
+{% tab title="200" %}
+```json
+{
+    "user": "string",
+    "posts": [
+        {"post object"},
+        {"post object"},
+        {"post object"}
+    ]
+}
+```
 {% endtab %}
 {% endtabs %}
 
