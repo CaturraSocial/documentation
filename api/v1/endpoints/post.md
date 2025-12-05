@@ -25,11 +25,38 @@ So many changes will be made here as we perfect the wording of posts and replies
     "content": "string",
     "from": {"application object"},
     "locked": "boolean",
-    "replies": <a data-footnote-ref href="#user-content-fn-2">{"reply object"}</a>,
+    "reply_count": int,
     "like_count": int,
     "created_at": timestamp
 }
 </code></pre>
+{% endtab %}
+{% endtabs %}
+
+## Get Post Replies
+
+<mark style="color:blue;">`GET`</mark> `/post/{UUID}/replies/{page}`
+
+### Scopes
+
+> <mark style="color:yellow;">`post.get`</mark>, <mark style="color:yellow;">`reply.get`</mark>
+
+### Response
+
+{% tabs %}
+{% tab title="200" %}
+```json
+{
+    "post": {"post object"},
+    "replies": [
+        {"post object"},
+        {"post object"},
+        {"post object"},
+        {"post object"},
+        {"post object"}
+    ]
+}
+```
 {% endtab %}
 {% endtabs %}
 
@@ -60,7 +87,7 @@ So many changes will be made here as we perfect the wording of posts and replies
     "content": "string",
     "from": {"application object"},
     "locked": "boolean",
-    "replies": <a data-footnote-ref href="#user-content-fn-2">{"reply object"}</a>,
+    "reply_count": int,
     "like_count": int,
     "created_at": timestamp
 }
@@ -144,5 +171,3 @@ So many changes will be made here as we perfect the wording of posts and replies
 {% endtabs %}
 
 [^1]: Excludes Replies
-
-[^2]: Exclude Replies and Parent Data

@@ -4,7 +4,7 @@ icon: user
 
 # User
 
-## User
+## Get User
 
 <mark style="color:blue;">`GET`</mark> `/user/{UUID}`
 
@@ -44,7 +44,7 @@ icon: user
 {% endtab %}
 {% endtabs %}
 
-## User Posts
+## Get User Posts
 
 <mark style="color:blue;">`GET`</mark> `/user/{UUID}/posts/{page}`
 
@@ -97,7 +97,7 @@ icon: user
 {% endtab %}
 {% endtabs %}
 
-## Following
+## Get Following
 
 <mark style="color:blue;">`GET`</mark> `/user/{UUID}/following`
 
@@ -117,7 +117,7 @@ icon: user
 {% endtab %}
 {% endtabs %}
 
-## Followers
+## Get Followers
 
 <mark style="color:blue;">`GET`</mark> `/user/{UUID}/followers`
 
