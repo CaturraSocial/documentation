@@ -20,7 +20,23 @@ layout:
 
 # Changelog
 
-## V25-10-27
+## V25.12.06
+
+#### What's Changed
+
+* Homepage, Register and Login pages have had a huge redesign
+  * We are working towards updating our dashboards to follow our new design choices, check out [dev.caturra.app](https://dev.caturra.app/) as we will be testing them out over there first •⩊•
+* We've updated the API endpoint URL for likes, check out [/post/like](https://docs.caturra.social/api/v1/endpoints/post#like-unlike)&#x20;
+* We've updated the API endpoint URL for follow/unfollow, check out [/user/follow](https://docs.caturra.social/api/v1/endpoints/user#follow-unfollow)
+* We've updated the API endpoint for Posts to include the number of likes the post has
+* We've updated the API endpoint for Users to include the number of followers and how many they are following
+* We've added a new endpoint to allow you to easily access the Users posts [/user/posts](https://docs.caturra.social/api/v1/endpoints/user#get-user-posts)
+* We've added a new endpoint to allow you to easily access the Replies of any post [/post/replies](https://docs.caturra.social/api/v1/endpoints/post#get-post-replies)
+* We did an oops and now tokens really expire ฅ^.\_.^ฅ
+
+***
+
+## V25.10.27
 
 #### What's Changed
 
@@ -29,7 +45,7 @@ layout:
 
 ***
 
-## V25-10-24
+## V25.10.24
 
 #### What's Changed
 
@@ -44,6 +60,6 @@ layout:
 
 ***
 
-## V25-10-07
+## V25.10.07
 
 Initial Release.
