@@ -20,6 +20,17 @@ layout:
 
 # Changelog
 
+## V26.01.03
+
+#### What's Changed
+
+* Redesigned Our Dashboard
+* Added Dashboard Profile
+* Redesigned Oauth Page
+* Implemented Settings Page
+
+***
+
 ## V25.12.06
 
 #### What's Changed
