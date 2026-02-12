@@ -8,7 +8,7 @@ icon: book-open
 
 ## V26.02.10
 
-### What's Changed
+#### What's Changed
 
 * Finally Updated All Frontend Pages To Match Our New Design
   * With This Some Pages Have Been Updated To Better Reflect The Dashboard (Like Our Homepage Background, This Also Seemed To Lag Less Powerful Machines >\_< Oops)
