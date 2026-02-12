@@ -2,23 +2,21 @@
 hidden: true
 noRobotsIndex: true
 icon: book-open
-layout:
-  width: default
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
 ---
 
 # Changelog
+
+## V26.02.10
+
+### What's Changed
+
+* Finally Updated All Frontend Pages To Match Our New Design
+  * With This Some Pages Have Been Updated To Better Reflect The Dashboard (Like Our Homepage Background, This Also Seemed To Lag Less Powerful Machines >\_< Oops)
+* Fixed Feed Performance
+  * We Fixed Some Performance Issues With Some Of Our API Requests That Appeared In Our Last Update. Sorry About That •⩊•
+* This Update Mostly Had Some Background Changes But Rest Assured We Have Been Working On Some Things For You All.
+
+***
 
 ## V26.01.03
 
