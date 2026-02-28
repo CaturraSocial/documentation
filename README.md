@@ -1,3 +1,7 @@
+---
+noRobotsIndex: true
+---
+
 # Public Documentation
 
 {% hint style="danger" %}
