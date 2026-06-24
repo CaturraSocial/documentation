@@ -1,12 +1,30 @@
 ---
 icon: user
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: false
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
 ---
 
 # User
 
 ## Get User
 
-<mark style="color:blue;">`GET`</mark> `/user/{UUID}`
+<mark style="color:blue;">`GET`</mark> `/user/{UUID}` or `/user/@{username}`
 
 ### Notes
 

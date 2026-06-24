@@ -2,9 +2,36 @@
 hidden: true
 noRobotsIndex: true
 icon: book-open
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
 ---
 
 # Changelog
+
+## V26.05.28
+
+### What's Changed
+
+* Lookup user by UUID or @username
+* Implemented the start of our language system
+
+***
 
 ## V26.02.10
 
