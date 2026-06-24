@@ -26,7 +26,7 @@ layout:
 
 ## V26.05.28
 
-### What's Changed
+#### What's Changed
 
 * Lookup user by UUID or @username
 * Implemented the start of our language system
