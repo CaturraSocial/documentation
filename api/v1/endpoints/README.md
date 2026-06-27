@@ -1,6 +1,0 @@
----
-icon: loader
----
-
-# Endpoints
-

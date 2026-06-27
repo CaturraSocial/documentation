@@ -1,0 +1,62 @@
+---
+icon: square-rss
+---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
+# Feed
+
+## Public Feed
+
+<mark style={{'color':'blue'}}>`GET`</mark> `/feed/{page}`
+
+### Notes
+
+* `{page}` defaults to page 1 if left out
+* Each page shows 15 posts
+
+### Response
+
+<Tabs>
+<TabItem value="200" label="200">
+```json
+{
+    "feed": [
+        {"post object"},
+        {"post object"},
+        {"post object"}
+    ]
+}
+```
+</TabItem>
+</Tabs>
+
+## User Feed
+
+<mark style={{'color':'blue'}}>`GET`</mark> `/feed/user/{page}`
+
+### Notes
+
+* same as above
+
+### Scopes
+
+> <mark style={{'color':'yellow'}}>`feed.get`</mark>&#x20;
+
+### Response
+
+<Tabs>
+<TabItem value="200" label="200">
+```json
+{
+    "feed": [
+        {"post object"},
+        {"post object"},
+        {"post object"}
+    ]
+}
+```
+</TabItem>
+</Tabs>
+

@@ -1,0 +1,10 @@
+---
+noRobotsIndex: true
+---
+
+# WebSocket
+
+:::danger
+WebSockets have nothing so far; come back later.
+:::
+

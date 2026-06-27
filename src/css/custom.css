@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500;700&display=swap');
+
+:root {
+  --ifm-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --ifm-font-family-monospace: 'Fira Code', monospace;
+
+  /* Caturra Coral Brand Colors (#FD8B8B) */
+  --ifm-color-primary: #FD8B8B;
+  --ifm-color-primary-dark: #e57e7e;
+  --ifm-color-primary-darker: #c96f6f;
+  --ifm-color-primary-darkest: #a15959;
+  --ifm-color-primary-light: #fe9f9f;
+  --ifm-color-primary-lighter: #feb2b2;
+  --ifm-color-primary-lightest: #fec5c5;
+  
+  --ifm-background-color: #0b0f19;
+  --ifm-navbar-background-color: rgba(11, 15, 25, 0.85);
+  --ifm-navbar-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  --ifm-card-background-color: #121824;
+  
+  --caturra-glow: rgba(253, 139, 139, 0.12);
+  --caturra-gradient: linear-gradient(135deg, #FD8B8B 0%, #ff7676 100%);
+  --caturra-text-gradient: linear-gradient(135deg, #FD8B8B 0%, #ff9797 100%);
+  
+  --ifm-toc-link-color-active: var(--ifm-color-primary);
+}
+
+[data-theme='dark'] {
+  --ifm-background-color: #0b0f19;
+  --ifm-navbar-background-color: rgba(11, 15, 25, 0.85);
+  --ifm-navbar-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  --ifm-card-background-color: #121824;
+}
+
+[data-theme='light'] {
+  /* Light theme variations keeping Caturra Coral identity */
+  --ifm-background-color: #f8fafc;
+  --ifm-navbar-background-color: rgba(255, 255, 255, 0.85);
+  --ifm-navbar-shadow: 0 4px 30px rgba(0, 0, 0, 0.02);
+  --ifm-card-background-color: #ffffff;
+  
+  --caturra-glow: rgba(253, 139, 139, 0.08);
+}
+
+/* Glassmorphism Navigation Bar */
+.navbar {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--ifm-navbar-background-color);
+}
+
+[data-theme='light'] .navbar {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.navbar__brand {
+  font-weight: 700;
+}
+
+.navbar__title {
+  font-weight: 700;
+  font-size: 1.3rem;
+  letter-spacing: -0.2px;
+}
+
+/* Hero Section Branded to Caturra.app style */
+.hero {
+  background: transparent !important;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(99, 102, 241, 0.05) 0%, transparent 100%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.hero__title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 1.2;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+[data-theme='light'] .hero__title {
+  color: #0b0f19;
+}
+
+/* Brand colored highlight text */
+.brand-highlight {
+  color: #FD8B8B;
+  background: var(--caturra-text-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero__subtitle {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #9ca3af;
+  max-width: 600px;
+  margin: 0 auto 2.5rem auto;
+  line-height: 1.6;
+}
+
+[data-theme='light'] .hero__subtitle {
+  color: #4b5563;
+}
+
+/* Buttons in Caturra style */
+.button.button--secondary {
+  background: var(--caturra-gradient);
+  color: #0f172a !important; /* Dark text for readability on coral button */
+  border: none;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 0.8rem 2.2rem;
+  box-shadow: 0 4px 14px rgba(253, 139, 139, 0.3);
+  transition: all 0.2s ease-in-out;
+}
+
+.button.button--secondary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(253, 139, 139, 0.5);
+  filter: brightness(1.05);
+  color: #0f172a !important;
+}
+
+.button.button--outline {
+  border-color: #FD8B8B !important;
+  color: #ffffff !important;
+  border-radius: 8px;
+  padding: 0.8rem 2.2rem;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+  background: transparent;
+}
+
+[data-theme='light'] .button.button--outline {
+  color: #0b0f19 !important;
+  border-color: #FD8B8B !important;
+}
+
+.button.button--outline:hover {
+  background-color: var(--caturra-glow) !important;
+  color: #FD8B8B !important;
+  border-color: #FD8B8B !important;
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
+
+/* Feature Cards in Caturra style */
+.feature-card {
+  background: var(--ifm-card-background-color);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  padding: 2rem;
+  height: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+[data-theme='light'] .feature-card {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+}
+
+.feature-card:hover {
+  transform: translateY(-3px);
+  border-color: #FD8B8B;
+  box-shadow: 0 8px 30px rgba(253, 139, 139, 0.12);
+}
+
+.feature-icon-wrapper {
+  background: var(--caturra-glow);
+  border-radius: 12px;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.feature-card:hover .feature-icon-wrapper {
+  transform: scale(1.05);
+}
+
+.feature-icon-wrapper svg {
+  color: #FD8B8B;
+  width: 28px;
+  height: 28px;
+}
+
+/* Sidebar Custom Styling */
+.menu__link--active {
+  background-color: var(--caturra-glow) !important;
+  color: #FD8B8B !important;
+}
+
+.menu__link:hover {
+  color: #FD8B8B;
+}
+
+/* Custom Admonitions styling */
+.theme-admonition {
+  border-radius: 8px;
+  border-left-width: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+}
+
+/* Note/Info Admonition */
+.theme-admonition-note,
+.theme-admonition-info {
+  border-left-color: #3b82f6 !important;
+  background-color: #111827 !important;
+  color: #eff6ff !important;
+}
+[data-theme='light'] .theme-admonition-note,
+[data-theme='light'] .theme-admonition-info {
+  background-color: #eff6ff !important;
+  color: #1e3a8a !important;
+}
+
+/* Tip Admonition */
+.theme-admonition-tip {
+  border-left-color: #10b981 !important;
+  background-color: #062f21 !important;
+  color: #ecfdf5 !important;
+}
+[data-theme='light'] .theme-admonition-tip {
+  background-color: #ecfdf5 !important;
+  color: #064e3b !important;
+}
+
+/* Warning Admonition */
+.theme-admonition-warning {
+  border-left-color: #f59e0b !important;
+  background-color: #2b1f0c !important;
+  color: #fffbeb !important;
+}
+[data-theme='light'] .theme-admonition-warning {
+  background-color: #fffbeb !important;
+  color: #78350f !important;
+}
+
+/* Danger Admonition */
+.theme-admonition-danger {
+  border-left-color: #ef4444 !important;
+  background-color: #241414 !important;
+  color: #fef2f2 !important;
+}
+[data-theme='light'] .theme-admonition-danger {
+  background-color: #fef2f2 !important;
+  color: #7f1d1d !important;
+}
+
+/* Custom Markdown Table styles */
+table {
+  width: 100% !important;
+  display: table !important;
+  border-radius: 8px;
+  overflow: hidden;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+th {
+  background-color: var(--ifm-color-primary-darker) !important;
+  color: #0f172a !important;
+  border: none;
+  padding: 0.8rem 1rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+[data-theme='dark'] th {
+  color: #0f172a !important;
+}
+
+td {
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  padding: 0.8rem 1rem;
+  background-color: #121824 !important;
+}
+
+[data-theme='light'] td {
+  border: 1px solid rgba(0, 0, 0, 0.06) !important;
+  background-color: #ffffff !important;
+}
+
+tr:nth-child(even) td {
+  background-color: #182030 !important;
+}
+
+[data-theme='light'] tr:nth-child(even) td {
+  background-color: #f8fafc !important;
+}
+
+/* Footer Enhancements */
+.footer {
+  background-color: #080c14;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+[data-theme='light'] .footer {
+  background-color: #f1f5f9;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Highlight badge styling */
+mark {
+  background-color: color-mix(in srgb, currentColor 12%, transparent) !important;
+  border: 1px solid color-mix(in srgb, currentColor 25%, transparent) !important;
+  border-radius: 4px;
+  padding: 0.12rem 0.35rem;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.85em;
+  font-weight: 600;
+  color: #fe9f9f; /* Default fallback color */
+}
+
+[data-theme='light'] mark {
+  color: #c24141; /* Default fallback light mode color */
+}
+
+/* Override inline colors with premium, accessible color palettes */
+mark[style*="blue"] {
+  color: #60a5fa !important;
+}
+[data-theme='light'] mark[style*="blue"] {
+  color: #1d4ed8 !important;
+}
+
+mark[style*="yellow"] {
+  color: #fef08a !important;
+}
+[data-theme='light'] mark[style*="yellow"] {
+  color: #854d0e !important;
+}
+
+mark[style*="purple"] {
+  color: #c084fc !important;
+}
+[data-theme='light'] mark[style*="purple"] {
+  color: #6d28d9 !important;
+}
+
+mark[style*="red"] {
+  color: #fca5a5 !important;
+}
+[data-theme='light'] mark[style*="red"] {
+  color: #b91c1c !important;
+}
+
+mark[style*="orange"] {
+  color: #fed7aa !important;
+}
+[data-theme='light'] mark[style*="orange"] {
+  color: #c2410c !important;
+}
+
+/* Hide bottom pagination navigation (Previous/Next buttons) */
+.pagination-nav {
+  display: none !important;
+}
