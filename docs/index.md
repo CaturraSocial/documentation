@@ -12,5 +12,5 @@ These docs are still being worked on, anything could/will change before being fi
 | :-----------------------: | :-----------------------: |
 |        [API](/api/index.mdx)        |  API is feature-complete  |
 |      [OAuth](/oauth/index.mdx)      | OAuth is feature-complete |
-| [WebSocket](/websocket.md) |          On Pause         |
-| [Guidelines](/guidelines/index.md) |   New Reports Guidelines  |
+| [WebSocket](/websocket/index.mdx) |          On Pause         |
+| [Guidelines](/guidelines/index.mdx) |   New Reports Guidelines  |

@@ -80,7 +80,7 @@ const sidebars: SidebarsConfig = {
         },
       ],
     },
-    'websocket',
+    'websocket/index',
     {
       type: 'category',
       label: 'Caturra Guidelines',

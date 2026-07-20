@@ -43,7 +43,7 @@ const config: Config = {
             'https://github.com/CaturraSocial/documentation/tree/main/',
           versions: {
             current: {
-              label: 'Development',
+              label: 'Dev',
               path: 'dev',
             },
           },
