@@ -1,0 +1,42 @@
+---
+icon: house
+---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
+# Home
+
+:::danger
+Everything here is mostly final, wording and how the system works could still be changed before we launch
+:::
+
+## Welcome
+
+to the V1 API, here is a comprehensive doc on how to use our API for your applications. Make sure to read everything. For any extra explanations, please head over to our [Discord](https://discord.gg/NkUtMFraHg).
+
+## URL
+
+`https://caturra.app/api/v1`
+
+## **Headers**
+
+| Name          | Value              |
+| ------------- | ------------------ |
+| Content-Type  | `application/json` |
+| Authorization | `Bearer <token>`   |
+
+## Errors
+
+This is how ALL errors will be sent back. If anything else is returned, report it to the developers.
+
+<Tabs>
+<TabItem value="errors" label="Errors">
+```json
+{
+    "code": error code,
+    "_message": "an error message explaining what failed"
+}
+```
+</TabItem>
+</Tabs>

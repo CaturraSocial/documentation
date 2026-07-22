@@ -1,0 +1,160 @@
+---
+icon: user
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: false
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
+---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
+# User
+
+## Get User
+
+<mark style={{'color':'blue'}}>`GET`</mark> `/user/{UUID}` or `/user/@{username}`
+
+### Notes
+
+* If left empty, it will get the owner of the token's info
+  * You will only receive the email of the token owner if you have the <mark style={{'color':'yellow'}}>user.email</mark> scope
+  * It will return `NULL` for both `email` and `email_verified`&#x20;
+* When requesting a specific user, the `email` and `email_verified` will not be returned
+* `avatar` currently returns a Gravatar URL; you can follow their docs for further customisation
+
+### Scopes
+
+> <mark style={{'color':'yellow'}}>user.get</mark>, <mark style={{'color':'yellow'}}>user.email</mark>
+
+### Response
+
+<Tabs>
+<TabItem value="200" label="200">
+
+```json
+{
+    "uuid": "string",
+    "username": "string",
+    "display_name": "string",
+    "avatar": "string",
+    "email": "string",
+    "email_verified": "boolean",
+    "badge": ["array"],
+    "bio": "string",
+    "follow_count": int,
+    "following_count": int,
+    "has_followed": "boolean",
+    "joined": timestamp
+}
+```
+
+</TabItem>
+</Tabs>
+
+## Get User Posts
+
+<mark style={{'color':'blue'}}>`GET`</mark> `/user/{UUID}/posts/{page}`
+
+### Scopes
+
+> <mark style={{'color':'yellow'}}>user.get</mark>, <mark style={{'color':'yellow'}}>post.get</mark>
+
+### Response
+
+<Tabs>
+<TabItem value="200" label="200">
+```json
+{
+    "user": "string",
+    "posts": [
+        {"post object"},
+        {"post object"},
+        {"post object"}
+    ]
+}
+```
+</TabItem>
+</Tabs>
+
+## Follow/Unfollow
+
+<mark style={{'color':'yellow'}}>`POST`</mark> `/user/{UUID}/follow`
+
+### Scopes
+
+> <mark style={{'color':'yellow'}}>user.get</mark>, <mark style={{'color':'yellow'}}>user.follow</mark>
+
+### Response
+
+<Tabs>
+<TabItem value="200" label="200">
+```json
+{
+    "action": "followed",
+    "uuid": "string"
+}
+```
+
+```json
+{
+    "action": "unfollowed",
+    "uuid": "string"
+}
+```
+</TabItem>
+</Tabs>
+
+## Get Following
+
+<mark style={{'color':'blue'}}>`GET`</mark> `/user/{UUID}/following`
+
+### Scopes
+
+> <mark style={{'color':'yellow'}}>user.get</mark>, <mark style={{'color':'yellow'}}>user.following.get</mark>
+
+### Response
+
+<Tabs>
+<TabItem value="200" label="200">
+```json
+{
+    "following": ["array"]
+}
+```
+</TabItem>
+</Tabs>
+
+## Get Followers
+
+<mark style={{'color':'blue'}}>`GET`</mark> `/user/{UUID}/followers`
+
+### Scopes
+
+> <mark style={{'color':'yellow'}}>user.get</mark>, <mark style={{'color':'yellow'}}>user.followers.get</mark>
+
+### Response
+
+<Tabs>
+<TabItem value="200" label="200">
+```json
+{
+    "followers": ["array"]
+}
+```
+</TabItem>
+</Tabs>

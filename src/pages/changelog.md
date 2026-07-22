@@ -24,6 +24,20 @@ layout:
 
 # Changelog
 
+## V26.07.22
+
+#### What's Changed
+
+* Added `has_liked` to Post resources
+* Added `has_followed` to User resources
+* Added Select/Deselect All buttons for API scopes
+* Added public application pages (can be made private)
+* Added support for multiple redirect URI in applications
+* Fixed Token resetting expire date
+* Fixed <mark style={{'color':'purple'}}>Patch</mark> Profile endpoint allowing duplicate usernames
+
+***
+
 ## V26.05.28
 
 #### What's Changed
@@ -62,12 +76,12 @@ layout:
 
 * Homepage, Register and Login pages have had a huge redesign
   * We are working towards updating our dashboards to follow our new design choices, check out [dev.caturra.app](https://dev.caturra.app/) as we will be testing them out over there first •⩊•
-* We've updated the API endpoint URL for likes, check out [/post/like](https://docs.caturra.social/api/v1/endpoints/post#like-unlike)&#x20;
-* We've updated the API endpoint URL for follow/unfollow, check out [/user/follow](https://docs.caturra.social/api/v1/endpoints/user#follow-unfollow)
+* We've updated the API endpoint URL for likes, check out [/post/like](https://docs.caturra.app/docs/api/v1/endpoints/post#like-unlike)
+* We've updated the API endpoint URL for follow/unfollow, check out [/user/follow](https://docs.caturra.app/docs/api/v1/endpoints/user#follow-unfollow)
 * We've updated the API endpoint for Posts to include the number of likes the post has
 * We've updated the API endpoint for Users to include the number of followers and how many they are following
-* We've added a new endpoint to allow you to easily access the Users posts [/user/posts](https://docs.caturra.social/api/v1/endpoints/user#get-user-posts)
-* We've added a new endpoint to allow you to easily access the Replies of any post [/post/replies](https://docs.caturra.social/api/v1/endpoints/post#get-post-replies)
+* We've added a new endpoint to allow you to easily access the Users posts [/user/posts](https://docs.caturra.app/docs/api/v1/endpoints/user#get-user-posts)
+* We've added a new endpoint to allow you to easily access the Replies of any post [/post/replies](https://docs.caturra.app/docs/api/v1/endpoints/post#get-post-replies)
 * We did an oops and now tokens really expire ฅ^.\_.^ฅ
 
 ***
@@ -85,7 +99,7 @@ layout:
 
 #### What's Changed
 
-* Updated and fixed `Get` user&#x20;
+* Updated and fixed `Get` user
   * We did an oopsie and didn't follow our own documentation - we now follow it •⩊•
 * Fix localhost redirects not working
   * When using localhost as your redirect URI on an application, it would redirect you back to us - we now appropriately redirect you back to your local environment instead of holding you hostage ദ്ദി（• ˕ •マ.ᐟ
