@@ -26,7 +26,7 @@ layout:
 
 ## V26.07.22a
 
-### What's Changed
+#### What's Changed
 
 * Fixed a bug with `has_followed` not saying false when a user doesn't follow another user (•˕ •マ.ᐟ
 
