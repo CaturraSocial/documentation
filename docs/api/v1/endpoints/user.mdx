@@ -27,7 +27,7 @@ import TabItem from '@theme/TabItem';
 
 ## Get User
 
-<mark style={{'color':'blue'}}>`GET`</mark> `/user/{UUID}` or `/user/@{username}`
+<mark style={{'color':'blue'}}>GET</mark> `/user/{UUID}` or `/user/@{username}`
 
 ### Notes
 
@@ -35,7 +35,7 @@ import TabItem from '@theme/TabItem';
   * You will only receive the email of the token owner if you have the <mark style={{'color':'yellow'}}>user.email</mark> scope
   * It will return `NULL` for both `email` and `email_verified`&#x20;
 * When requesting a specific user, the `email` and `email_verified` will not be returned
-* `avatar` currently returns a Gravatar URL; you can follow their docs for further customisation
+* `avatar` returns a URL unless the user has never set an avatar then a Gravatar URL is returned; you can follow their docs for further customisation.
 
 ### Scopes
 
@@ -52,6 +52,7 @@ import TabItem from '@theme/TabItem';
     "username": "string",
     "display_name": "string",
     "avatar": "string",
+    "banner": "string",
     "email": "string",
     "email_verified": "boolean",
     "badge": ["array"],
@@ -68,7 +69,7 @@ import TabItem from '@theme/TabItem';
 
 ## Get User Posts
 
-<mark style={{'color':'blue'}}>`GET`</mark> `/user/{UUID}/posts/{page}`
+<mark style={{'color':'blue'}}>GET</mark> `/user/{UUID}/posts/{page}`
 
 ### Scopes
 
@@ -93,7 +94,7 @@ import TabItem from '@theme/TabItem';
 
 ## Follow/Unfollow
 
-<mark style={{'color':'yellow'}}>`POST`</mark> `/user/{UUID}/follow`
+<mark style={{'color':'yellow'}}>POST</mark> `/user/{UUID}/follow`
 
 ### Scopes
 
@@ -121,7 +122,7 @@ import TabItem from '@theme/TabItem';
 
 ## Get Following
 
-<mark style={{'color':'blue'}}>`GET`</mark> `/user/{UUID}/following`
+<mark style={{'color':'blue'}}>GET</mark> `/user/{UUID}/following`
 
 ### Scopes
 
@@ -141,7 +142,7 @@ import TabItem from '@theme/TabItem';
 
 ## Get Followers
 
-<mark style={{'color':'blue'}}>`GET`</mark> `/user/{UUID}/followers`
+<mark style={{'color':'blue'}}>GET</mark> `/user/{UUID}/followers`
 
 ### Scopes
 

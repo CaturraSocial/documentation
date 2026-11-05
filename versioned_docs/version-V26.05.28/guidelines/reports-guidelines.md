@@ -21,7 +21,7 @@ layout:
 
 # Reports Guidelines
 
-Developers should give users simple ways to report users or posts on their platforms, that could be a simple report button on the post or users page or within a context menu.\
+Developers should give users simple ways to report users or posts on their platforms, that could be a simple report button on the post or users page or within a context menu.
 
 
 ![Button Example](/.gitbook/assets/brave_PcsGK8LmMG.png)

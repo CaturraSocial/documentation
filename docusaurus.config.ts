@@ -97,11 +97,11 @@ const config: Config = {
           items: [
             {
               label: 'Public Documentation',
-              to: '/docs/',
+              to: './docs/',
             },
             {
               label: 'API Reference',
-              to: '/docs/api/',
+              to: './docs/api/',
             },
             {
               label: 'Changelog',
